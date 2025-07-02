@@ -1,3 +1,7 @@
-output "cloudfront_domain_name" {
-  value = aws_cloudfront_distribution.this.domain_name
+output "lambda_function_name" {
+  value = aws_lambda_function.this.function_name
+}
+
+output "lambda_invoke_arn" {
+  value = aws_lambda_function.this.invoke_arn
 }
